@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Quiz</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+    <div class="scores"><a href=""></a></div>
+    <div class="timer">Time: <span id="time">0</span></div>
+
+    <div class="wrapper">
+        <!-- Start Screen -->
+        <div id="start-screen" class="start">
+            <h1>JS Quiz</h1>
+            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrct
+                answers will penzliae your score/time by ten seconds!</p>
+            <button id="start">Start The Game!</button>
+        </div>
+
+        <!-- Question's Display Here -->
+        <div id="questions" class="hide">
+            <h3 id="question-title"></h3>
+            <div id="choices"></div>
+        </div>
+        <!-- Feedback Display ie Correct/Wrong -->
+        <div id="feedback" class="hide"></div>
+    </div>
+
+
+    <script src="./assets/questions.js" async defer></script>
+    <script src="./assets/logic.js" async defer></script>
+</body>
+
+</html>
